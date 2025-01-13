@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, TextInput, Button, Alert, Switch } from 'react-native';
 import React, { useState } from 'react';
 import * as yup from 'yup';
+import AppFormix from './components/AppFormix';
 
 const PasswordSchema = yup.object().shape({
   passwordlength: yup.number()
@@ -89,7 +90,9 @@ export default function App() {
         title="Reset"
         onPress={resetPasswordState} // Call the reset function here
       />
+    <AppFormix></AppFormix>
     </View>
+   
   );
 }
 
